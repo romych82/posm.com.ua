@@ -13,7 +13,7 @@ var cbpAnimatedTex = (function() {
 	var docElem = document.documentElement,
 		header1 = document.querySelector( '.clearfix' ),
 		didScroll = false,
-		textFadeOn = 10;
+		textFadeOn = 11;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
