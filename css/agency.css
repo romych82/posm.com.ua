@@ -211,7 +211,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-toggle {
     border-color: #fed136;
     /*background-color: #fed136;*/
-      background-color: #000;
+      background-color: #222;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -221,7 +221,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     /*background-color: #fed136;*/
-    background-color: #000;
+    background-color: #222;
 }
 
 .navbar-default .nav li a {
@@ -1052,7 +1052,7 @@ body {
 
     .logo-custom {
         position: relative;
-        bottom: 10px;
+        bottom: 4px;
         right: 60px;
         left: 30px;
         width: 200px;
