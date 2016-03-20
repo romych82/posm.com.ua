@@ -1024,6 +1024,7 @@ body {
 @media(max-width: 480px) {
     .pushed-menu-down {
         background-color: #000 !important;
+        width: 365px !important;
     }
 
     .navbar-default .navbar-nav .dropdown .dropdown-toggle:focus,
@@ -1056,9 +1057,7 @@ body {
         height: 39px;
     }
 
-
-
-    .clearfix:before, .clearfix:after {
+        .clearfix:before, .clearfix:after {
         content: "";
         display: table;
     }
