@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://php54-tptp.rhcloud.com/e-market/admin/');
-define('HTTP_CATALOG', 'http://php54-tptp.rhcloud.com/e-market/');
+define('HTTP_SERVER', 'http://www.posm.com.ua/e-market/admin/');
+define('HTTP_CATALOG', 'http://www.posm.com.ua/e-market/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://php54-tptp.rhcloud.com/e-market/admin/');
-define('HTTPS_CATALOG', 'http://php54-tptp.rhcloud.com/e-market/');
+define('HTTPS_SERVER', 'http://www.posm.com.ua/e-market/admin/');
+define('HTTPS_CATALOG', 'http://www.posm.com.ua/e-market/');
 
 // DIR
 define('DIR_APPLICATION', '/var/lib/openshift/58984b277628e1f7f200010e/app-root/runtime/repo/e-market/admin/');

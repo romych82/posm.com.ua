@@ -1,0 +1,1212 @@
+2017-02-07 14:29:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-07 14:30:51 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-12 11:15:09 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Social and Payment Logos in Footer
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <div class="row">
+LINE: 5
+CODE: <hr>
+LINE: 51
+CODE: <p><?php echo $powered; ?></p>
+LINE: 52
+CODE: <hr>
+LINE: 51
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-12 11:16:52 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Social and Payment Logos in Footer
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <div class="row">
+LINE: 5
+CODE: <hr>
+LINE: 51
+CODE: <p><?php echo $powered; ?></p>
+LINE: 52
+CODE: <hr>
+LINE: 51
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-12 11:29:13 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-12 12:02:26 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-12 12:03:49 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-12 12:03:50 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
+2017-02-12 16:37:28 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Watermark module for opencart
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 24
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']);
+LINE: 31
+
+FILE: catalog/controller/extension/module/ebay_listing.php
+CODE: $image = $this->model_extension_openbay_ebay_product->resize($product['pictures'][0], $this->config->get('ebay_listing_width'), $this->config->get('ebay_listing_height'));
+LINE: 23
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/module/banner.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 21
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: 'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_sitemap.php
+CODE: $output .= '<image:loc>' . $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')) . '</image:loc>';
+LINE: 20
+
+FILE: catalog/controller/extension/feed/google_base.php
+CODE: $output .= '  <g:image_link>' . $this->model_tool_image->resize($product['image'], 500, 500) . '</g:image_link>';
+LINE: 40
+
+FILE: catalog/controller/product/product.php
+CODE: $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
+LINE: 284
+CODE: $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+LINE: 290
+CODE: 'popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),
+LINE: 301
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 302
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+LINE: 410
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 180
+
+FILE: catalog/controller/product/search.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 217
+
+FILE: catalog/controller/product/special.php
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 102
+
+FILE: catalog/controller/product/compare.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_compare_width'), $this->config->get($this->config->get('config_theme') . '_image_compare_height'));
+LINE: 77
+
+FILE: catalog/controller/product/category.php
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get($this->config->get('config_theme') . '_image_category_width'), $this->config->get($this->config->get('config_theme') . '_image_category_height'));
+LINE: 124
+CODE: $image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
+LINE: 183
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 91
+
+FILE: catalog/controller/common/cart.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 65
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $image = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get($this->config->get('config_theme') . '_image_wishlist_height'));
+LINE: 77
+
+FILE: catalog/controller/extension/payment/pp_express.php
+CODE: $image = $this->model_tool_image->resize($product['image'], $this->config->get($this->config->get('config_theme') . '_image_cart_width'), $this->config->get($this->config->get('config_theme') . '_image_cart_height'));
+LINE: 454
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 8
+CODE: }
+LINE: 58
+----------------------------------------------------------------
