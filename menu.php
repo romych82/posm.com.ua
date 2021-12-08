@@ -31,7 +31,7 @@
           <ul class="dropdown-menu navbar-toggle pushed-menu-down" data-no-collapse="true">
             <li><a class="page-scroll" href="#portfolio">Полное Portfolio</a></li>
              <li class="divider"></li>
-            <li><a href="posm_kassa.html">Прикассовые стойки 111111111</a></li>
+            <li><a href="posm_kassa.html">Прикассовые стойки</a></li>
             <li><a href="posm_stoyka.html">Рекламно-Торговые стеллажи</a></li>
             <li><a href="posm_stellazh.html">Стационарные стеллажи</a></li>
             <li><a href="lightbox.html">Рекламные вывески</a></li>
