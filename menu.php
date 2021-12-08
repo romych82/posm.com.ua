@@ -1,3 +1,7 @@
+
+   <?php
+   phpinfo();
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
