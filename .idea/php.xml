@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/mail/vendor/guzzle/guzzle" />
+      <path value="$PROJECT_DIR$/mail/vendor/composer" />
+      <path value="$PROJECT_DIR$/mail/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/mail/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/mail/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/mail/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/mail/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/mail/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/mail/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/mail/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/mail/vendor/phpunit/php-timer" />
+    </include_path>
+  </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="84bf7329-01f5-4841-a4d0-83a83e60b780" name="root@192.168.0.146:22 password" home="sshConfig://DATA" debugger_id="php.debugger.XDebug">
