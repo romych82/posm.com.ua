@@ -74,7 +74,7 @@
 <body id="page-top" class="index">
 
 
-include "menu.php";
+<?php include "menu.php" ?>
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
