@@ -991,12 +991,12 @@ body {
     background: white !important;
     /*padding: 5px;*/
     /*border-radius: 15px;*/
-    color: #16a085 !important;
+    color: #a01679 !important;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   background-color:white !important;
-  color: #16a085 !important;
+  color: #a01679 !important;
 }
 
 .pushed-menu {
@@ -1009,8 +1009,8 @@ body {
  border-radius: 3px !important;
  width: 365px;
  margin-right: -146px;
- background-color: #16a085 !important;
- border-color: #16a085 !important;
+ background-color: #a01679 !important;
+ border-color: #a01679 !important;
 }
 
 .logo-custom {
