@@ -1,7 +1,7 @@
 <?php
 /* 
 	PHP Watermark
-	Author Alfyorov D. ADDA
+	Author Alferov D. WDDA
 	https://github.com/wdda/watermark
 */
 
@@ -18,8 +18,7 @@ if(!is_dir($dir)) mkdir($dir);
 
 //Путь до файла с оригинальным изображением
 $path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
-$array = explode('/', $_SERVER['REQUEST_URI']);
-$nameImage = end($array); //Имя изображения
+$nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
 //Проверяем дату для рефреша кеша
@@ -35,34 +34,15 @@ if(file_exists('cache/' . $nameImageId)){
 	if($dateImage < $dateImageCache){
 		
 		$image = new Imagick();
-        try {
-            $image->readImage('cache/' . $nameImageId);
-        } catch (ImagickException $e) {
-        }
-        header('Content-type: image/jpeg');
-        try {
-            echo $image->getImageBlob();
-        } catch (ImagickException $e) {
-        }
+		$image->readImage('cache/' . $nameImageId);
+		header('Content-type: image/jpeg');
+		echo $image->getImageBlob();
 
-    }else{
-        try {
-            newImage($path, $nameImageId);
-        } catch (ImagickException $e) {
-        }
-    }
+	}else{ newImage($path, $nameImageId); }
 	
-}else{
-    try {
-        newImage($path, $nameImageId);
-    } catch (ImagickException $e) {
-    }
-}
+}else{ newImage($path, $nameImageId); }
 
 //Если нет в кеше или есть но более старая версия
-/**
- * @throws ImagickException
- */
 function newImage($path, $nameImageId){
 	// Загружаем оригинальное изображение 
 	$image = new Imagick();
