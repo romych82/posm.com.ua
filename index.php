@@ -70,9 +70,12 @@
 </head>
 
 
+
 <body id="page-top" class="index">
 
-
+ <?php
+   phpinfo();
+   
 include "menu.php";
 
 <!-- Navigation -->
