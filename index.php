@@ -69,7 +69,11 @@
 
 </head>
 
+<?php
 
+phpinfo();
+
+?>
 
 <body id="page-top" class="index">
 
