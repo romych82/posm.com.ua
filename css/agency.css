@@ -979,7 +979,7 @@ body {
  display: inline-block;
  border-left: 6px solid transparent;
  border-right: 6px solid transparent;
- border-bottom: 6px solid #16a085; /* change color here, modified for a black arrow */
+ border-bottom: 6px solid #a01679; /* change color here, modified for a black arrow */
  position: absolute;
  top: -6px;
  left: 10px;
