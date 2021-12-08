@@ -1,7 +1,7 @@
 <?php
 /* 
 	PHP Watermark
-	Author Alferov D. WDDA
+	Author Alfyorov D. ADDA
 	https://github.com/wdda/watermark
 */
 
@@ -35,15 +35,34 @@ if(file_exists('cache/' . $nameImageId)){
 	if($dateImage < $dateImageCache){
 		
 		$image = new Imagick();
-		$image->readImage('cache/' . $nameImageId);
-		header('Content-type: image/jpeg');
-		echo $image->getImageBlob();
-		
-	}else{ newImage($path, $nameImageId); }
+        try {
+            $image->readImage('cache/' . $nameImageId);
+        } catch (ImagickException $e) {
+        }
+        header('Content-type: image/jpeg');
+        try {
+            echo $image->getImageBlob();
+        } catch (ImagickException $e) {
+        }
+
+    }else{
+        try {
+            newImage($path, $nameImageId);
+        } catch (ImagickException $e) {
+        }
+    }
 	
-}else{ newImage($path, $nameImageId); }
+}else{
+    try {
+        newImage($path, $nameImageId);
+    } catch (ImagickException $e) {
+    }
+}
 
 //Если нет в кеше или есть но более старая версия
+/**
+ * @throws ImagickException
+ */
 function newImage($path, $nameImageId){
 	// Загружаем оригинальное изображение 
 	$image = new Imagick();
