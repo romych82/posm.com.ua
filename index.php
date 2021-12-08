@@ -163,7 +163,7 @@ require_once('menu.php');
 
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_kassa.html" class="portfolio-link"">
+                    <a href="posm_kassa.php" class="portfolio-link"">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
