@@ -73,6 +73,7 @@
 
 <body id="page-top" class="index">
 
+require_once("menu.php");
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
