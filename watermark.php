@@ -19,7 +19,7 @@ function newImage(){
     $h = $image->getImageHeight();
 
     $imageWatermark = new Imagick();
-    $imageWatermark->readImage('watermark.png');
+    $imageWatermark->readImage('logo.png');
     $ww = $imageWatermark->getImageWidth();
     $wh = $imageWatermark->getImageHeight();
 
