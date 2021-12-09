@@ -11,9 +11,10 @@ newImage();
 
 //Если нет в кеше или есть но более старая версия
 function newImage(){
+    $path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
     // Загружаем оригинальное изображение
     $image = new Imagick();
-    $image->readImage('logo2.jpg');
+    $image->readImage($path);
     $w = $image->getImageWidth();
     $h = $image->getImageHeight();
 
