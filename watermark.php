@@ -1,71 +1,76 @@
 <?php
-/*
-	PHP Watermark
-	Author Alferov D. WDDA
-	https://github.com/wdda/watermark
-*/
+waterMark("http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], "watermark.png", "bottom=5,right=5");
 
+function waterMark($original, $watermark, $placement = 'bottom=5,right=5', $destination = null) {
+    $original = urldecode($original);
+    $info_o = @getImageSize($original);
+    if (!$info_o)
+        return false;
+    $info_w = @getImageSize($watermark);
+    if (!$info_w)
+        return false;
 
+    list ($vertical, $horizontal) = split(',', $placement,2);
+    list($vertical, $sy) = split('=', trim($vertical),2);
+    list($horizontal, $sx) = split('=', trim($horizontal),2);
 
+    switch (trim($vertical)) {
+        case 'bottom':
+            $y = $info_o[1] - $info_w[1] - (int)$sy;
+            break;
+        case 'middle':
+            $y = ceil($info_o[1]/2) - ceil($info_w[1]/2) + (int)$sy;
+            break;
+        default:
+            $y = (int)$sy;
+            break;
+    }
 
-$dir = 'cache';
-if(!is_dir($dir)) mkdir($dir);
+    switch (trim($horizontal)) {
+        case 'right':
+            $x = $info_o[0] - $info_w[0] - (int)$sx;
+            break;
+        case 'center':
+            $x = ceil($info_o[0]/2) - ceil($info_w[0]/2) + (int)$sx;
+            break;
+        default:
+            $x = (int)$sx;
+            break;
+    }
 
-//Путь до файла с оригинальным изображением
-$path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
-$nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
-$nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
+    header("Content-Type: ".$info_o['mime']);
 
-echo $path;
-echo $nameImage;
-echo $nameImageId;
+    $original = @imageCreateFromString(file_get_contents($original));
+    $watermark = @imageCreateFromString(file_get_contents($watermark));
+    $out = imageCreateTrueColor($info_o[0],$info_o[1]);
 
-//Проверяем дату для рефреша кеша
-if(file_exists('cache/' . $nameImageId)){
+    imageCopy($out, $original, 0, 0, 0, 0, $info_o[0], $info_o[1]);
 
-    //Время создания файла в кеше
-    $dateImageCache = filemtime('cache/' . $nameImageId);
+//Здесь задаем размер изображения в которые можно добавлять Watermark
+// $info_o[0] > 250 - ширина изображения должна быть больше 250 px
+// $info_o[1] > 250 - высота изображения должна быть больше 250 px
 
-    //Время создания оригинального файла
-    $dateImage = filemtime($path);
+    if( ($info_o[0] > 250) && ($info_o[1] > 250) )
+    {
+        imageCopy($out, $watermark, $x, $y, 0, 0, $info_w[0], $info_w[1]);
+    }
 
-    //Если оригинал старше чем в кеше
-    if($dateImage < $dateImageCache){
+    switch ($info_o[2]) {
+        case 1:
+            imageGIF($out);
+            break;
+        case 2:
+            imageJPEG($out);
+            break;
+        case 3:
+            imagePNG($out);
+            break;
+    }
 
-        $image = new Imagick();
-        $image->readImage('cache/' . $nameImageId);
-        header('Content-type: image/jpeg');
-        echo $image->getImageBlob();
+    imageDestroy($out);
+    imageDestroy($original);
+    imageDestroy($watermark);
 
-    }else{ newImage($path, $nameImageId); }
-
-}else{ newImage($path, $nameImageId); }
-
-//Если нет в кеше или есть но более старая версия
-function newImage($path, $nameImageId){
-    // Загружаем оригинальное изображение
-    $image = new Imagick();
-    $image->readImage($path);
-    $w = $image->getImageWidth();
-    $h = $image->getImageHeight();
-
-    $imageWatermark = new Imagick();
-    $imageWatermark->readImage('watermark.png');
-    $ww = $imageWatermark->getImageWidth();
-    $wh = $imageWatermark->getImageHeight();
-
-    //Отступ снизу
-    $paddingBottom = 10;
-
-    //Отступ справа
-    $paddingRight = 10;
-
-    //Это позволяет поставить изображение в нижний правый угол (учитывая отступы)
-    $x = ($w - $ww) - $paddingRight;
-    $y = ($h - $wh) - $paddingBottom;
-
-    $image->compositeImage($imageWatermark, imagick::COMPOSITE_OVER, $x, $y);
-    $image->writeImage('cache/' . $nameImageId);
-    header('Content-type: image/jpeg');
-    echo $image->getImageBlob();
+    return true;
 }
+?>
