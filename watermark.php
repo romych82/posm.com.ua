@@ -1,50 +1,9 @@
 <?php
-/* 
-	PHP Watermark
-	Author Alferov D. WDDA
-	https://github.com/wdda/watermark
-*/
 
-//На всякий случай запретим выполнять без пароля (его нужно поменять в .htaccess)
-if(!empty($_GET['pass'])){
-	
-	//Поменяйте в htaccess и тут
-	if($_GET['pass'] != '123123') die;
-	
-}else{die;}
+newImage();
 
-$dir = 'cache';
-if(!is_dir($dir)) mkdir($dir);
-
-//Путь до файла с оригинальным изображением
-$path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
-$nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
-$nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
-
-//Проверяем дату для рефреша кеша
-if(file_exists('cache/' . $nameImageId)){
-	
-	//Время создания файла в кеше
-	$dateImageCache = filemtime('cache/' . $nameImageId);
-	
-	//Время создания оригинального файла
-	$dateImage = filemtime($path);
-	
-	//Если оригинал старше чем в кеше
-	if($dateImage < $dateImageCache){
-		
-		$image = new Imagick();
-		$image->readImage('cache/' . $nameImageId);
-		header('Content-type: image/jpeg');
-		echo $image->getImageBlob();
-
-	}else{ newImage($path, $nameImageId); }
-	
-}else{ newImage($path, $nameImageId); }
-
-//Если нет в кеше или есть но более старая версия
-function newImage($path, $nameImageId){
-	// Загружаем оригинальное изображение 
+function newImage(){
+	// Загружаем оригинальное изображение
 	$image = new Imagick();
 //	$image->readImage($path);
     $image->readImage('logo2.jpg');
@@ -67,7 +26,8 @@ function newImage($path, $nameImageId){
 	$y = ($h - $wh) - $paddingBottom;
 	
 	$image->compositeImage($imageWatermark, imagick::COMPOSITE_OVER, $x, $y);
-	$image->writeImage('cache/' . $nameImageId);
+
 	header('Content-type: image/jpeg');
 	echo $image->getImageBlob();
 }
+
