@@ -1,5 +1,5 @@
 <?php
-waterMark("http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], "watermark.png", "bottom=5,right=5");
+waterMark($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI'], "watermark.png", "bottom=5,right=5");
 
 function waterMark($original, $watermark, $placement = 'bottom=5,right=5', $destination = null) {
     $original = urldecode($original);
