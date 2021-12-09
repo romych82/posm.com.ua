@@ -20,26 +20,7 @@ echo $path;
 echo $nameImage;
 echo $nameImageId;
 
-//Проверяем дату для рефреша кеша
-if(file_exists('cache/' . $nameImageId)){
-
-    //Время создания файла в кеше
-    $dateImageCache = filemtime('cache/' . $nameImageId);
-
-    //Время создания оригинального файла
-    $dateImage = filemtime($path);
-
-    //Если оригинал старше чем в кеше
-    if($dateImage < $dateImageCache){
-
-        $image = new Imagick();
-        $image->readImage('cache/' . $nameImageId);
-        header('Content-type: image/jpeg');
-        echo $image->getImageBlob();
-
-    }else{ newImage($path, $nameImageId); }
-
-}else{ newImage($path, $nameImageId); }
+newImage($path, $nameImageId);
 
 //Если нет в кеше или есть но более старая версия
 function newImage($path, $nameImageId){
