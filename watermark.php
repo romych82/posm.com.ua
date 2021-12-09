@@ -23,10 +23,10 @@ echo $nameImageId;
 newImage($path);
 
 //Если нет в кеше или есть но более старая версия
-function newImage($path){
+function newImage($nameImage){
     // Загружаем оригинальное изображение
     $image = new Imagick();
-    $image->readImage($path);
+    $image->readImage($nameImage);
     $w = $image->getImageWidth();
     $h = $image->getImageHeight();
 
