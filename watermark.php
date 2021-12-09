@@ -46,6 +46,5 @@ function newImage($path){
     $y = ($h - $wh) - $paddingBottom;
 
     $image->compositeImage($imageWatermark, imagick::COMPOSITE_OVER, $x, $y);
-    header('Content-type: image/jpeg');
     echo $image->getImageBlob();
 }
