@@ -20,7 +20,7 @@ echo $path;
 echo $nameImage;
 echo $nameImageId;
 
-newImage($path);
+newImage($nameImage);
 
 //Если нет в кеше или есть но более старая версия
 function newImage($nameImage){
