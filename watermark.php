@@ -1,12 +1,15 @@
 <?php
 
-newImage();
+$path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
+$nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
+
+newImage($path);
 
 function newImage(){
 	// Загружаем оригинальное изображение
 	$image = new Imagick();
-//	$image->readImage($path);
-    $image->readImage('logo2.jpg');
+	$image->readImage($path);
+    //   $image->readImage('logo2.jpg');
 	$w = $image->getImageWidth(); 
 	$h = $image->getImageHeight();
 	
