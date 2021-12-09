@@ -13,32 +13,12 @@ $path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
 $nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
-//Проверяем дату для рефреша кеша
-if(file_exists('cache/' . $nameImageId)){
+function newImage($nameImage)
 
-    //Время создания файла в кеше
-    $dateImageCache = filemtime('cache/' . $nameImageId);
-
-    //Время создания оригинального файла
-    $dateImage = filemtime($path);
-
-    //Если оригинал старше чем в кеше
-    if($dateImage < $dateImageCache){
-
-        $image = new Imagick();
-        $image->readImage('cache/' . $nameImageId);
-        header('Content-type: image/jpeg');
-        echo $image->getImageBlob();
-
-    }else{ newImage($path, $nameImageId); }
-
-}else{ newImage($path, $nameImageId); }
-
-//Если нет в кеше или есть но более старая версия
-function newImage($path, $nameImageId){
+function newImage($nameImage){
     // Загружаем оригинальное изображение
     $image = new Imagick();
-    $image->readImage($path);
+    $image->readImage($nameImage);
     $w = $image->getImageWidth();
     $h = $image->getImageHeight();
 
@@ -58,7 +38,6 @@ function newImage($path, $nameImageId){
     $y = ($h - $wh) - $paddingBottom;
 
     $image->compositeImage($imageWatermark, imagick::COMPOSITE_OVER, $x, $y);
-    $image->writeImage('cache/' . $nameImageId);
     header('Content-type: image/jpeg');
     echo $image->getImageBlob();
 }
