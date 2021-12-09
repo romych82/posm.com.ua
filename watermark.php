@@ -17,6 +17,8 @@ $nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображ
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
 echo $path;
+echo $nameImage;
+echo $nameImageId;
 
 //Проверяем дату для рефреша кеша
 if(file_exists('cache/' . $nameImageId)){
