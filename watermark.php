@@ -26,7 +26,7 @@ newImage();
 function newImage(){
     // Загружаем оригинальное изображение
     $image = new Imagick();
-    $image->readImage('1.jpg');
+    $image->readImage('logo2.jpg');
     $w = $image->getImageWidth();
     $h = $image->getImageHeight();
 
