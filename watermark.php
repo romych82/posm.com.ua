@@ -7,13 +7,13 @@ $nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображ
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
 
-newImage($nameImage);
+newImage();
 
 //Если нет в кеше или есть но более старая версия
-function newImage($nameImage){
+function newImage(){
     // Загружаем оригинальное изображение
     $image = new Imagick();
-    $image->readImage($nameImage);
+    $image->readImage($path);
     $w = $image->getImageWidth();
     $h = $image->getImageHeight();
 
