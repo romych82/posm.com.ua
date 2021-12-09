@@ -5,6 +5,9 @@
 	https://github.com/wdda/watermark
 */
 
+
+
+
 $dir = 'cache';
 if(!is_dir($dir)) mkdir($dir);
 
@@ -13,12 +16,17 @@ $path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
 $nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
-newImage($nameImage);
+echo $path;
+echo $nameImage;
+echo $nameImageId;
 
-function newImage($nameImage){
+newImage($path);
+
+//Если нет в кеше или есть но более старая версия
+function newImage($path, $nameImageId){
     // Загружаем оригинальное изображение
     $image = new Imagick();
-    $image->readImage($nameImage);
+    $image->readImage($path);
     $w = $image->getImageWidth();
     $h = $image->getImageHeight();
 
@@ -38,6 +46,7 @@ function newImage($nameImage){
     $y = ($h - $wh) - $paddingBottom;
 
     $image->compositeImage($imageWatermark, imagick::COMPOSITE_OVER, $x, $y);
+
     header('Content-type: image/jpeg');
     echo $image->getImageBlob();
 }
