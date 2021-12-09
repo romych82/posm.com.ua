@@ -5,6 +5,8 @@
 	https://github.com/wdda/watermark
 */
 
+echo "привет";
+
 //На всякий случай запретим выполнять без пароля (его нужно поменять в .htaccess)
 if(!empty($_GET['pass'])){
 
