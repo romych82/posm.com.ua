@@ -46,7 +46,8 @@ if(file_exists('cache/' . $nameImageId)){
 function newImage($path, $nameImageId){
 	// Загружаем оригинальное изображение 
 	$image = new Imagick();
-	$image->readImage($path);
+//	$image->readImage($path);
+    $image->readImage('logo2.jpg');
 	$w = $image->getImageWidth(); 
 	$h = $image->getImageHeight();
 	
