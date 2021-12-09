@@ -6,21 +6,14 @@
 */
 
 
-//На всякий случай запретим выполнять без пароля (его нужно поменять в .htaccess)
-if(!empty($_GET['pass'])){
 
-    //Поменяйте в htaccess и тут
-    if($_GET['pass'] != '123123') die;
-
-}else{die;}
 
 $dir = 'cache';
 if(!is_dir($dir)) mkdir($dir);
 
 //Путь до файла с оригинальным изображением
 $path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
-$array = explode('/', $_SERVER['REQUEST_URI']);
-$nameImage = end($array); //Имя изображения
+$nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
 //Проверяем дату для рефреша кеша
