@@ -13,7 +13,7 @@ $path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
 $nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
-function newImage($nameImage)
+newImage($nameImage);
 
 function newImage($nameImage){
     // Загружаем оригинальное изображение
