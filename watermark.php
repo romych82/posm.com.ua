@@ -13,17 +13,18 @@ if(!is_dir($dir)) mkdir($dir);
 
 //Путь до файла с оригинальным изображением
 $path = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
-$nameImage = end(explode('/', $_SERVER['REQUEST_URI'])); //Имя изображения
+$array = explode('/', $_SERVER['REQUEST_URI']);
+$nameImage = end($array); //Имя изображения
 $nameImageId = md5($path) . '_' . $nameImage; //Имя изображения в кеше
 
 echo $path;
 echo $nameImage;
 echo $nameImageId;
 
-newImage($path);
+newImage($path, $nameImageId);
 
 //Если нет в кеше или есть но более старая версия
-function newImage($path){
+function newImage($path, $nameImageId){
     // Загружаем оригинальное изображение
     $image = new Imagick();
     $image->readImage($path);
@@ -46,5 +47,7 @@ function newImage($path){
     $y = ($h - $wh) - $paddingBottom;
 
     $image->compositeImage($imageWatermark, imagick::COMPOSITE_OVER, $x, $y);
+    $image->writeImage('cache/' . $nameImageId);
+    header('Content-type: image/jpeg');
     echo $image->getImageBlob();
 }
