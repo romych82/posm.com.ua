@@ -21,7 +21,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Сервис</a>
+                        <a class="page-scroll" href="index.php#services">Сервис</a>
                     </li>
 
 
@@ -29,18 +29,20 @@
          <li class="dropdown">
           <a href="#" class="dropdown-toggle pushed-menu" data-toggle="dropdown">Каталог/Portfolio <b class="caret"></b></a>
           <ul class="dropdown-menu navbar-toggle pushed-menu-down" data-no-collapse="true">
-            <li><a class="page-scroll" href="#portfolio">Полное Portfolio</a></li>
+              <li><a class="page-scroll" href="index.php#page-top">Главная Home</a></li>
+              <li class="divider"></li>
+            <li><a class="page-scroll" href="index.php#portfolio">Полное Portfolio</a></li>
              <li class="divider"></li>
-            <li><a href="posm_kassa.html">Прикассовые стойки</a></li>
-            <li><a href="posm_stoyka.html">Рекламно-Торговые стеллажи</a></li>
-            <li><a href="posm_stellazh.html">Стационарные стеллажи</a></li>
-            <li><a href="lightbox.html">Рекламные вывески</a></li>
-            <li><a href="posm_strip_holder.html">Пластиковые держатели</a></li>
-            <li><a href="posm_wire_display.html">Проволочные дисплеи</a></li>
-            <li><a href="posm_wire_stoyka.html">Облегченные сетчатые стойки</a></li>
-            <li><a href="posm_acryl.html">Изделия из прозрачного пластика</a></li>
+            <li><a href="posm_kassa.php">Прикассовые стойки</a></li>
+            <li><a href="posm_stoyka.php">Рекламно-Торговые стеллажи</a></li>
+            <li><a href="posm_stellazh.php">Стационарные стеллажи</a></li>
+            <li><a href="lightbox.php">Рекламные вывески</a></li>
+            <li><a href="posm_strip_holder.php">Пластиковые держатели</a></li>
+            <li><a href="posm_wire_display.php">Проволочные дисплеи</a></li>
+            <li><a href="posm_wire_stoyka.php">Облегченные сетчатые стойки</a></li>
+            <li><a href="posm_acryl.php">Изделия из пластика</a></li>
             <li><a href="#">Широкоформатная печать</a></li>
-            <li><a href="posm_shtender.html">Штендеры. Х-баннер. Стенды.</a></li>
+            <li><a href="posm_shtender.php">Штендеры. Х-баннер. Стенды.</a></li>
             <li><a href="#">Лазерная гравировка</a></li>
           </ul>
         </li>
@@ -55,7 +57,7 @@
                         <a class="page-scroll" href="#team">Команда</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Контакты</a>
+                        <a class="page-scroll" href="index.php#contact">Контакты</a>
                     </li>
                 </ul>
             </div>

@@ -59,71 +59,13 @@
 <body id="page-top" class="index">
 
 
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="lines-button x navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="lines"></span>
+<!-- Navigation start -->
+<?php
 
-            </button>
-            <a class="navbar-brand page-scroll" href="index.php#page-top">
-                <img src="logo.png" class="img-polaroid logo-custom"/>
-            </a>
-        </div>
+require_once('menu.php');
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#services">Сервис</a>
-                </li>
-
-
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle pushed-menu" data-toggle="dropdown">Каталог/Portfolio <b class="caret"></b></a>
-                    <ul class="dropdown-menu navbar-toggle pushed-menu-down" data-no-collapse="true">
-                        <li><a class="page-scroll" href="index.php#portfolio">Полное Portfolio</a></li>
-                        <li class="divider"></li>
-                        <li><a href="posm_stoyka.html">Рекламно-Торговые стеллажи</a></li>
-                        <li><a href="posm_stellazh.html">Стационарные стеллажи</a></li>
-                        <li><a href="lightbox.html">Рекламные вывески</a></li>
-                        <li><a href="posm_strip_holder.html">Пластиковые держатели</a></li>
-                        <li><a href="posm_wire_display.html">Проволочные дисплеи</a></li>
-                        <li><a href="posm_wire_stoyka.html">Облегченные сетчатые стойки</a></li>
-                        <li><a href="posm_acryl.html">Изделия из прозрачного пластика</a></li>
-                        <li><a href="#">Широкоформатная печать</a></li>
-                        <li><a href="posm_shtender.html">Штендеры. Х-баннер. Стенды.</a></li>
-                        <li><a href="#">Картонная упаковка</a></li>
-                        <li><a href="posm_decal.html">Деколь на посуде</a></li>
-                        <li><a href="#">Лазерная гравировка</a></li>
-                    </ul>
-                </li>
-
-
-
-
-                <li>
-                    <a class="page-scroll" href="#about">О нас</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#team">Команда</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#contact">Контакты</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+?>
+<!-- Navigation end -->
 
 
 
@@ -133,50 +75,59 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Изделия из прозрачного и цветного пластика</h2>
-                <h3 class="section-subheading text-muted">Акрил. Полистирол. Другие</h3>
+                <h2 class="section-heading">Штендеры. Х-баннер. Мобильные стенды.</h2>
+                <h3 class="section-subheading text-muted">Индивидуальные конструкции</h3>
             </div>
             <p> </p>
             <div class="gallery">
 
 
 
-                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_acryl/view/1.jpg">
+                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_shtender/view/1.jpg">
                     <div class="thumbnail-hover">
                         <div class="thumbnail-hover-content">
                         <i class="fa fa-search-plus fa-4x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/posm_acryl/preview/1-preview.jpg">
+                    <img src="img/portfolio/posm_shtender/preview/1-preview.jpg">
                 </a>
 
-                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_acryl/view/2.jpg">
+                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_shtender/view/2.jpg">
                     <div class="thumbnail-hover">
                         <div class="thumbnail-hover-content">
                         <i class="fa fa-search-plus fa-4x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/posm_acryl/preview/2-preview.jpg">
+                    <img src="img/portfolio/posm_shtender/preview/2-preview.jpg">
                 </a>
 
-                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_acryl/view/3.jpg">
+                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_shtender/view/3.jpg">
                     <div class="thumbnail-hover">
                         <div class="thumbnail-hover-content">
                         <i class="fa fa-search-plus fa-4x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/posm_acryl/preview/3-preview.jpg">
+                    <img src="img/portfolio/posm_shtender/preview/3-preview.jpg">
                 </a>
 
-                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_acryl/view/4.jpg">
-                <div class="thumbnail-hover">
-                    <div class="thumbnail-hover-content">
+		 <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_shtender/view/4.jpg">
+                    <div class="thumbnail-hover">
+                        <div class="thumbnail-hover-content">
                         <i class="fa fa-search-plus fa-4x"></i>
+                        </div>
                     </div>
-                </div>
-                <img src="img/portfolio/posm_acryl/preview/4-preview.jpg">
+                    <img src="img/portfolio/posm_shtender/preview/4-preview.jpg">
                 </a>
-                
+
+                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_shtender/view/5.jpg">
+                    <div class="thumbnail-hover">
+                        <div class="thumbnail-hover-content">
+                        <i class="fa fa-search-plus fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/posm_shtender/preview/5-preview.jpg">
+                </a>
+
                 <!--<div class="col-xs-6 col-sm-4 portfolio-item">-->
 
                     <!--<a class="thumbnail portfolio-link" href="/img/portfolio/1.jpg">-->
@@ -219,6 +170,7 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/agency_partfolio.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 <script src="js/agency.js"></script>
 
 </body>

@@ -200,7 +200,7 @@ require_once('menu.php');
 
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_stoyka.html" class="portfolio-link">
+                    <a href="posm_stoyka.php" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
@@ -219,7 +219,7 @@ require_once('menu.php');
 
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_stellazh.html" class="portfolio-link">
+                    <a href="posm_stellazh.php" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
@@ -236,7 +236,7 @@ require_once('menu.php');
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_wire_stoyka.html" class="portfolio-link">
+                    <a href="posm_wire_stoyka.php" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
@@ -252,7 +252,7 @@ require_once('menu.php');
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_wire_display.html" class="portfolio-link">
+                    <a href="posm_wire_display.php" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
@@ -269,7 +269,7 @@ require_once('menu.php');
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="lightbox.html" class="portfolio-link">
+                    <a href="lightbox.php" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
@@ -286,7 +286,7 @@ require_once('menu.php');
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_strip_holder.html" class="portfolio-link">
+                    <a href="posm_strip_holder.php" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
@@ -303,7 +303,7 @@ require_once('menu.php');
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_acryl.html" class="portfolio-link">
+                    <a href="posm_acryl.php" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 УЗНАТЬ БОЛЬШЕ
@@ -337,7 +337,7 @@ require_once('menu.php');
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="posm_shtender.html" href="" class="portfolio-link">
+                    <a href="posm_shtender.php" href="" class="portfolio-link">
 
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
