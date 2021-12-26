@@ -113,7 +113,7 @@
         </div>
 
         <div class="row">
-            <div class="col-sm portfolio-item">
+            <div class="col-xxl portfolio-item">
                 <a href="posm_kassa.php" class="portfolio-link"">
                 <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
@@ -130,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="col-sm portfolio-item">
+            <div class="col-xxl portfolio-item">
                 <a href="posm_kassa.php" class="portfolio-link"">
                 <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
@@ -147,7 +147,7 @@
                 </div>
             </div>
 
-            <div class="col-sm portfolio-item">
+            <div class="col-xxl portfolio-item">
                 <a href="posm_kassa.php" class="portfolio-link"">
                 <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
