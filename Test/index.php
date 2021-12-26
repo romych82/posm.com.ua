@@ -101,7 +101,7 @@
 </nav>
 
 
-<section id="portfolio" class="bg-image">
+<section id="portfolio">
 
 
     <div class="container">
