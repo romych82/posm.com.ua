@@ -982,7 +982,7 @@ body {
  display: inline-block;
  border-left: 6px solid transparent;
  border-right: 6px solid transparent;
- border-bottom: 6px solid #a01679; /* change color here, modified for a black arrow */
+ border-bottom: 6px solid #000000; /* change color here, modified for a black arrow */
  position: absolute;
  top: -6px;
  left: 10px;
@@ -994,12 +994,12 @@ body {
     background: white !important;
     /*padding: 5px;*/
     /*border-radius: 15px;*/
-    color: #a01679 !important;
+    color: #000000 !important;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   background-color:white !important;
-  color: #a01679 !important;
+  color: #000000 !important;
 }
 
 .pushed-menu {
@@ -1012,8 +1012,8 @@ body {
  border-radius: 3px !important;
  width: 365px;
  margin-right: -146px;
- background-color: #a01679 !important;
- border-color: #a01679 !important;
+ background-color: #000000 !important;
+ border-color: #000000 !important;
 }
 
 .logo-custom {

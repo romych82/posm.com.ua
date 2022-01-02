@@ -167,6 +167,61 @@
 
         </div>
 
+        <div class="row">
+            <div class="col portfolio-item">
+                <a href="posm_kassa.php" class="portfolio-link"">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        УЗНАТЬ БОЛЬШЕ
+                    </div>
+                </div>
+
+                <img data-original="img/portfolio/posm_kassa.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="350" height="289">
+
+
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Прикассовые стойки. Стойки для касс самообслуживания</h4>
+                </div>
+            </div>
+
+            <div class="col portfolio-item">
+                <a href="posm_kassa.php" class="portfolio-link"">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        УЗНАТЬ БОЛЬШЕ
+                    </div>
+                </div>
+
+                <img data-original="img/portfolio/posm_kassa.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="350" height="289">
+
+
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Прикассовые стойки. Стойки для касс самообслуживания</h4>
+                </div>
+            </div>
+
+            <div class="col portfolio-item">
+                <a href="posm_kassa.php" class="portfolio-link"">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        УЗНАТЬ БОЛЬШЕ
+                    </div>
+                </div>
+
+                <img data-original="img/portfolio/posm_kassa.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="350" height="289">
+
+
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Прикассовые стойки. Стойки для касс самообслуживания</h4>
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
 
 
