@@ -35,7 +35,7 @@
             <h3 style= "text-transform: none" class="float-md-start mb-0">BRAND & STORE Service</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a class="nav-link active" aria-current="page" href="#">Приветствие</a>
-                <a class="nav-link" href="#">О нас</a>
+                <a class="nav-link" href="indextest.php">О нас</a>
                 <a class="nav-link" href="#">Контакты</a>
             </nav>
         </div>

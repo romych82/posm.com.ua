@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
                 <li class="nav-item">
-                    <a class="nav-link active nav-item-custom" aria-current="page" href="#">Главная</a>
+                    <a class="nav-link active nav-item-custom" aria-current="page" href="index4.php">Приветсвие</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-item-custom" href="#">Ссылка</a>
