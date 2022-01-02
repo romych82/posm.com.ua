@@ -29,67 +29,31 @@
 
 <body style="background-color: #000000;">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-sm navbar-custom ">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">BRAND&STORE Service</a>
-         <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Переключить навигацию">
-           <span class="toggler-icon top-bar"></span>
-           <span class="toggler-icon middle-bar"></span>
-           <span class="toggler-icon bottom-bar"></span>
+<?php
 
+require_once('menu.php');
 
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
-                <li class="nav-item">
-                    <a class="nav-link active nav-item-custom" aria-current="page" href="index4.php">Приветсвие</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-item-custom" href="#">Ссылка</a>
-                </li>
-               <li class="nav-item dropdown">
-                    <a class="nav-link nav-item-custom" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Выпадающая кнопка</a>
-                    <ul class="dropdown-menu navbar-custom" aria-labelledby="dropdown03">
-                        <li><a class="dropdown-item nav-item-custom" href="#">Действие</a></li>
-                        <li><a class="dropdown-item nav-item-custom" href="#">Другое действие</a></li>
-                        <li><a class="dropdown-item nav-item-custom" href="#">Что-то еще здесь</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+?>
 
 <div class="container-my">
-    <h1 style="color: #FFFFFF">СТАЦИОНАРНЫЕ РЕКЛАМНО-ТОРГОВЫЕ СТЕЛЛАЖИ</h1>
+    <h1 style="color: #FFFFFF">Оборудование для торговых залов</h1>
     <div class="gallery d-flex" >
-        <a href="img/portfolio/posm_stellazh/view/1.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/1-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/2.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/2-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/3.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/3-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/4.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/4-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/5.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/5-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/6.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/6-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/1.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/1-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/2.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/2-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/3.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/3-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/4.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/4-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/5.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/5-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/6.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/6-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/1.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/1-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/2.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/2-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/3.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/3-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/4.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/4-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/5.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/5-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/6.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/6-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/1.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/1-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/2.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/2-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/3.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/3-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/4.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/4-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/5.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/5-preview.jpg"></a>
-        <a href="img/portfolio/posm_stellazh/view/6.jpg" title="Evening Sea"><img src="img/portfolio/posm_stellazh/preview/6-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/1.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/1-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/2.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/2-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/3.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/3-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/4.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/4-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/5.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/5-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/6.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/6-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/7.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/7-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/8.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/8-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/9.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/9-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/10.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/10-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/11.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/11-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/12.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/12-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/13.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/13-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/14.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/14-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/15.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/15-preview.jpg"></a>
+        <a href="img/portfolio/posm_custom/view/16.jpg" title="Evening Sea"><img src="img/portfolio/posm_custom/preview/16-preview.jpg"></a>
     </div>
 </div>
 

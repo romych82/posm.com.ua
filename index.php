@@ -154,8 +154,8 @@ require_once('menu.php');
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Каталог / Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Изделия нашего производства</h3>
+                    <h2 class="section-heading">Каталог/Продукция</h2>
+                    <h3 class="section-subheading text-muted"> </h3>
                 </div>
             </div>
             <div class="row">
@@ -176,6 +176,24 @@ require_once('menu.php');
                     </a>
                     <div class="portfolio-caption">
                         <h4>Прикассовые стойки. Стойки для касс самообслуживания</h4>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="Test/indextest.php" class="portfolio-link"">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            УЗНАТЬ БОЛЬШЕ
+                        </div>
+                    </div>
+
+                    <img data-original="img/portfolio/posm_custom.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="400" height="289">
+
+
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Оборудование для торговых залов</h4>
 
                     </div>
                 </div>
@@ -227,7 +245,7 @@ require_once('menu.php');
                         </div>
 
 <img data-original="img/portfolio/posm_stellazh.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="400" height="289">
-                        
+
                     </a>
                     <div class="portfolio-caption">
                         <h4>Стационарные стеллажи</h4>
@@ -311,7 +329,7 @@ require_once('menu.php');
                         </div>
 
 <img data-original="img/portfolio/posm_akril.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="400" height="289">
-                        
+
                     </a>
                     <div class="portfolio-caption">
                         <h4>Изделия из пластика</h4>
@@ -328,7 +346,7 @@ require_once('menu.php');
                         </div>
 
 <img data-original="img/portfolio/posm_printing.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="400" height="289">
-                        
+
                     </a>
                     <div class="portfolio-caption">
                         <h4>Широкоформатная печать</h4>
@@ -346,7 +364,7 @@ require_once('menu.php');
                         </div>
 
 <img data-original="img/portfolio/posm_shtender.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="lazy img-responsive" alt="" width="400" height="289">
-                       
+
                     </a>
                     <div class="portfolio-caption">
                         <h4>Штендеры. Х-баннер. Стенды.</h4>
@@ -374,7 +392,7 @@ require_once('menu.php');
                 </div>
 
 
-               
+
                <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="posm_decal.html" href="" class="portfolio-link">
                         <div class="portfolio-hover">

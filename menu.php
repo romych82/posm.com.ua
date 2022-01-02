@@ -27,7 +27,7 @@
 
 
          <li class="dropdown">
-          <a href="#" class="dropdown-toggle pushed-menu" data-toggle="dropdown">Каталог/Portfolio <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle pushed-menu" data-toggle="dropdown">Каталог/Продукция <b class="caret"></b></a>
           <ul class="dropdown-menu navbar-toggle pushed-menu-down" data-no-collapse="true">
               <li><a class="page-scroll" href="index.php#page-top">Главная Home</a></li>
               <li class="divider"></li>

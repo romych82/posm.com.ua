@@ -1,32 +1,50 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-sm navbar-custom ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="img-responsive" src="logo.png">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Раскрыта на sm</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Переключить навигацию">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        </a>
+        <a class="navbar-brand" href="#" style="color: #FFFFFF;">BRAND&STORE Service</a>
+        <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Переключить навигацию">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
 
-            <div class="collapse navbar-collapse" id="navbarsExample03">
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ссылка</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Выпадающая кнопка</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                            <li><a class="dropdown-item" href="#">Действие</a></li>
-                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                    <a class="nav-link active nav-item-custom" aria-current="page" href="index4.php">Приветсвие</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-item-custom" href="#">О нас</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-item-custom" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">КАТАЛОГ/ПРОДУКЦИЯ</a>
+                    <ul class="dropdown-menu navbar-custom" aria-labelledby="dropdown03">
+                        <li><a class="dropdown-item nav-item-custom" href="#">Полное Portfolio</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Прикассовые стойки</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Рекламно-Торговые стеллажи</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Стационарные стеллажи</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Рекламные вывески</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Пластиковые держатели</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Проволочные дисплеи</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Облегченные сетчатые стойки</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Изделия из пластика</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Широкоформатная печать</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Штендеры. Х-баннер. Стенды.</a></li>
+                        <li><a class="dropdown-item nav-item-custom" href="#">Лазерная гравировка</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-item-custom" href="#">Контакты</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
