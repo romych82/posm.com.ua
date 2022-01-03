@@ -29,10 +29,8 @@
          <li class="dropdown">
           <a href="#" class="dropdown-toggle pushed-menu" data-toggle="dropdown">Каталог/Продукция <b class="caret"></b></a>
           <ul class="dropdown-menu navbar-toggle pushed-menu-down" data-no-collapse="true">
-              <li><a class="page-scroll" href="index.php#page-top">Главная Home</a></li>
-              <li class="divider"></li>
+            <li><a class="page-scroll" href="index.php#page-top">Главная Home</a></li>
             <li><a class="page-scroll" href="index.php#portfolio">Полное Portfolio</a></li>
-             <li class="divider"></li>
             <li><a href="posm_kassa.php">Прикассовые стойки</a></li>
             <li><a href="posm_stoyka.php">Рекламно-Торговые стеллажи</a></li>
             <li><a href="posm_stellazh.php">Стационарные стеллажи</a></li>
