@@ -106,6 +106,15 @@ require_once('menu.php');
             <img src="img/portfolio/posm_kassa/preview/3-preview.jpg">
             </a>
 
+                <a class="thumbnail col-xs-6 col-sm-4" target="_"blank"" href="img/portfolio/posm_kassa/view/4.jpg">
+                <div class="thumbnail-hover">
+                    <div class="thumbnail-hover-content">
+                        <i class="fa fa-search-plus fa-4x"></i>
+                    </div>
+                </div>
+                <img src="img/portfolio/posm_kassa/preview/4-preview.jpg">
+                </a>
+
 
 
               </div>
