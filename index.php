@@ -181,7 +181,7 @@ require_once('menu.php');
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="Test/indextest.php" class="portfolio-link"">
+                    <a href="posm_custom.php" class="portfolio-link"">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             УЗНАТЬ БОЛЬШЕ
