@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Производство торгового оборудования, рекламных стоек в Украине">
+    <meta name="description" content="Торговое оборудование и рекламное оборудование. Производство в Украине. posm изготовление.">
     <meta name="author" content="Темченко Роман Temchenko Roman +380506152392">
-    <meta name="keywords" content="торговое оборудование, рекламные стойки, рекламная стойка, стойка, дисплей, паразит, диспенсер, стеллаж, стеллажи, posm, pos, POS-материалы, ПОСМ, ПОС, ПОСМ-материалы, ПОС-материалы">
+    <meta name="keywords" content="рекламное оборудование, posm изготовление, изготовление posm, торговое оборудование, рекламные стойки, рекламная стойка, стойка, дисплей, паразит, диспенсер, стеллаж, стеллажи, posm, pos, POS-материалы, ПОСМ, ПОС, ПОСМ-материалы, ПОС-материалы, бумажные пакеты, стойки под бумажные пакеты>
 
-    <title>Торговое и рекламное оборудование, производство в Украине!!</title>
+    <title>Торговое оборудование и рекламное оборудование. Производство в Украине. posm изготовление.</title>
     <link rel="shortcut icon" href="tp.png" type="image/png">
 
     <!-- Bootstrap Core CSS -->
